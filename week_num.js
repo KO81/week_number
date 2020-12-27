@@ -3,7 +3,7 @@ week_num=function(){
 	if(week==0){
 	week=1;
 	var d1=new Date();
-	var d=new Date(""+d1.getFullYear()+"/1/1");
+	var d=new Date(""+(d1.getFullYear()-1)+"/12/31");
 	var c=d.getDay();
 	var d2=new Date(d1.getFullYear()+'/'+(d1.getMonth()+1)+'/'+d1.getDate());
 	var Differ_Time=d2.getTime()-d.getTime();
