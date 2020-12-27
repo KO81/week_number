@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 usage exsample :
 
     "<xmp>
-      <p id="result">361/366/52</p>
+      <p id="result">362/366/52</p>
       <script type="text/javascript">document.getElementById("result").innerHTML=week_num();</script>
 or  
   
