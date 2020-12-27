@@ -12,6 +12,6 @@ week_num=function(){
 	if(Number.isInteger(Math.abs(d1.getFullYear()/4))){var tot_days=366;}else{var tot_days=365;};
 	if(c<=3){if(Differ_Days<=7){week_number=53;};};
 	return Differ_Days+'/'+tot_days+'/'+week_number;
-	setTimeout(function(){week=1;},300000);
+	setTimeout(function(){week=0;},300000);
 	}else{return;};
 };
