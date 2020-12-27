@@ -14,9 +14,8 @@ usage exsample :
     "<xmp>
       <p id="result">361/366/52</p>
       <script type="text/javascript">document.getElementById("result").innerHTML=week_num();</script>
-    </xmp>
-or
-  <xmp>
+or  
+  
       <p id="result">52</p>
       <script type="text/javascript">week_num();document.getElementById("result").innerHTML=week_number;</script>
     </xmp>"
