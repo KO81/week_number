@@ -6,6 +6,7 @@ week_num=function(){
 	var d=new Date(""+(d1.getFullYear()-1)+"/12/31");
 	var d_c=new Date(""+d1.getFullYear()+"/1/1");
 	var c=d.getDay();
+	var c_c=d_c.getDay();
 	var d2=new Date(d1.getFullYear()+'/'+(d1.getMonth()+1)+'/'+d1.getDate());
 	var Differ_Time=d2.getTime()-d.getTime();
 	var Differ_Days=Differ_Time/(1000*3600*24);
