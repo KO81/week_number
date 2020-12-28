@@ -12,7 +12,7 @@ week_num=function(){
 	var Differ_Days=Differ_Time/(1000*3600*24);
 	week_number=Math.floor(Differ_Days/7+1);
 	if(Number.isInteger(Math.abs(d1.getFullYear()/4))){var tot_days=366;}else{var tot_days=365;};
-	if(c<=3){if(Differ_Days<=7||Differ_Days>=363){week_number=53;};};
+	if(c<=3){if(Differ_Days>=363){week_number=53;};};
 	if(c_c>=4){if(Differ_Days<=3){week_number=53;};};
 	return Differ_Days+'/'+tot_days+'/'+week_number;
 	setTimeout(function(){week=0;},300000);
