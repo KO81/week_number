@@ -4,6 +4,7 @@ week_num=function(){
 	week=1;
 	var d1=new Date();
 	var d=new Date(""+(d1.getFullYear()-1)+"/12/31");
+	var d_c=new Date(""+d1.getFullYear()+"/1/1");
 	var c=d.getDay();
 	var d2=new Date(d1.getFullYear()+'/'+(d1.getMonth()+1)+'/'+d1.getDate());
 	var Differ_Time=d2.getTime()-d.getTime();
@@ -11,6 +12,7 @@ week_num=function(){
 	week_number=Math.floor(Differ_Days/7+1);
 	if(Number.isInteger(Math.abs(d1.getFullYear()/4))){var tot_days=366;}else{var tot_days=365;};
 	if(c<=3){if(Differ_Days<=7||Differ_Days>=363){week_number=53;};};
+	if(c_c>=4){if(Differ_Days<=3){week_number=53;};};
 	return Differ_Days+'/'+tot_days+'/'+week_number;
 	setTimeout(function(){week=0;},300000);
 	}else{return;};
